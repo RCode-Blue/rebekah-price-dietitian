@@ -1,0 +1,33 @@
+{
+  "name": "rebekah-price-dietitian",
+  "version": "1.0.0",
+  "description": "Dietitian Profile Page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RCode-Blue/rebekah-price-dietitian.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Ricky Liew",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "gatsby": "^2.23.1",
+    "install": "^0.13.0",
+    "npm": "^6.14.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

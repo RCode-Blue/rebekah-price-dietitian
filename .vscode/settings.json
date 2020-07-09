@@ -20,29 +20,30 @@
   "bracket-pair-colorizer-2.colors": [
     // LIGHT THEME COLORS
     // -----------------
-    "darkred",
-    "darkorange",
-    "orangered",
-    "darkkhaki",
-    "darkgreen",
-    "blue",
-    "purple",
-    "deeppink",
-    "darkslategray",
-    "saddlebrown"
+    // "darkred",
+    // "darkorange",
+    // "orangered",
+    // "darkkhaki",
+    // "darkgreen",
+    // "blue",
+    // "purple",
+    // "deeppink",
+    // "darkslategray",
+    // "saddlebrown"
 
     // DARK THEME COLOURS
     // ------------------
-    // "lightsalmon",
-    // "gold",
-    // "peachpuff",
-    // "chartreuse",
-    // "mediumslateblue",
-    // "lightblue",
-    // "thistle",
-    // "fuchsia",
-    // "pink",
-    // "honeydew",
-    // "blanchedalmond"
-  ]
+    "lightsalmon",
+    "gold",
+    "peachpuff",
+    "chartreuse",
+    "mediumslateblue",
+    "lightblue",
+    "thistle",
+    "fuchsia",
+    "pink",
+    "honeydew",
+    "blanchedalmond"
+  ],
+  "editor.formatOnSave": true
 }

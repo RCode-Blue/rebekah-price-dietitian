@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/assets/img/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bannerslides`,
+        path: `${__dirname}/src/content/banner/slides/`,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-sharp`,
@@ -21,6 +28,7 @@ module.exports = {
         checkSupportedExtensions: false,
       },
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

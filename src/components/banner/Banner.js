@@ -1,17 +1,29 @@
 import React, { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.css";
 
-import BannerPics from "./BannerPics";
+import BannerSlides from "./BannerSlides";
 
 import FetchBannerImages from "../../queries/fetchBannerImages";
+import FetchBannerSlides from "../../queries/fetchBannerSlides";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import "../../styles/main.scss";
+import "../../styles/banner.scss";
 
 const Banner = () => {
   const [index, setIndex] = useState(0);
-  const data = FetchBannerImages();
+  const bannerImages = FetchBannerImages();
+  const slides = FetchBannerSlides();
 
-  if ({ data }) {
-    console.log({ data });
+  console.log(typeof bannerImages.bannerPics.edges);
 
-    return <BannerPics data={data} />;
+  if ({ slides }) {
+    return (
+      <div className="banner">
+        <BannerSlides bannerImages={bannerImages} slides={slides} />
+      </div>
+    );
   }
 
   return (

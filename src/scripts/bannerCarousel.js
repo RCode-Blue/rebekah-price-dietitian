@@ -19,8 +19,8 @@ export const handleCarousel = (direction, length, index) => {
       break;
 
     case "scroll":
-      console.log("default");
-      newIndex = index === length - 1 ? 0 : index - 1;
+      console.log("scroll");
+      newIndex = index === length - 1 ? 0 : index + 1;
       break;
 
     default:
@@ -30,7 +30,7 @@ export const handleCarousel = (direction, length, index) => {
   return newIndex;
 };
 
-// export const handleCarouselRotate = (direction, length, index) => {
-//   console.log("ROTATE");
-//   setTimeout(handleCarousel(direction, length, index), 5000);
-// };
+export const handleCarouselRotate = (direction, length, index) => {
+  console.log("ROTATE");
+  setTimeout(handleCarousel(direction, length, index), 5000);
+};

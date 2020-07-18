@@ -1,0 +1,53 @@
+@import "./abstracts/_variables.sass";
+
+.banner {
+  &__slides {
+  }
+}
+
+.slide {
+  &__img {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($banner-overlay-color, 0.35);
+
+    &__name {
+      position: absolute;
+      top: 10%;
+      left: 14%;
+      font-family: $font-style-banner-title;
+      font-size: $font-size-banner-title1;
+      color: $font-color-banner-title;
+    }
+    &__title {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      font-family: $font-style-banner-title;
+      font-size: $font-size-banner-title2;
+      font-weight: 600;
+      color: $font-color-banner-title;
+    }
+    &__cta {
+      position: absolute;
+      top: 70%;
+      width: 100%;
+      font-family: $font-style-banner-cta;
+      font-size: $font-size-banner-cta;
+      font-weight: 300;
+      color: $font-color-cta;
+      line-height: 220%;
+
+      div:nth-child(2) {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

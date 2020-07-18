@@ -11,7 +11,9 @@ const BannerPics = (data) => {
   // const data = FetchBannerImages();
   const bannerPics = data.data.bannerPics.edges;
 
-  // setTimeout(handleCarousel("next", bannerPics.length, index), 2000);
+  // setTimeout(setIndex(handleCarousel("next", bannerPics.length, index)), 2000);
+
+  // console.log(index);
 
   return (
     <div>

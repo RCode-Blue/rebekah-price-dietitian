@@ -21,6 +21,14 @@ module.exports = {
         path: `${__dirname}/src/content/banner/slides/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `maincontent`,
+        path: `${__dirname}/src/content/main/`,
+      },
+    },
+
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-sharp`,
@@ -43,7 +51,7 @@ module.exports = {
           },
           {
             family: `Quicksand`,
-            variants: [`400`, `500`],
+            variants: [`300`, `400`, `500`],
           },
         ],
       },

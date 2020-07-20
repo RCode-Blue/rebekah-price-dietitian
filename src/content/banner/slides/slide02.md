@@ -1,4 +1,5 @@
 ---
+usage: "banner"
 index: 2
 active: true
 slug: "./src/content/banner/slides/slide02"

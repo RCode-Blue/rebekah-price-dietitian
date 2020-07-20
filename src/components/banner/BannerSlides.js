@@ -25,8 +25,6 @@ const BannerSlides = (props) => {
   return (
     <Carousel {...getCarouselProps()} className="banner">
       {props.slides.bannerSlides.edges.map((element) => {
-        console.log(element.node.frontmatter);
-
         const filteredImages = props.bannerImages.bannerPics.edges.filter(
           (edge) => edge.node.name == element.node.frontmatter.imagename
         );

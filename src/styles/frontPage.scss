@@ -1,0 +1,15 @@
+@import "./abstracts/_variables.sass";
+
+.main-text {
+  font-family: $font-style1;
+  // font-family: "Quicksand";
+  font-weight: 300;
+  font-size: 2.2rem;
+  color: $color-blackbean-6;
+  padding: 8rem 20rem;
+  background-color: $color-mint-1;
+  &__content {
+    line-height: 160%;
+    text-align: justify;
+  }
+}

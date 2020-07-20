@@ -1,11 +1,10 @@
 @import "./abstracts/_variables.sass";
 
 .banner {
-  max-height: 90vh;
 }
 
 .slide {
-  // max-height: 90vh;
+  max-height: 90vh;
   &__img {
     position: relative;
   }
@@ -22,7 +21,7 @@
       position: absolute;
       top: 10%;
       left: 14%;
-      font-family: $font-style-banner-title;
+      font-family: $font-style2;
       // font-size: $font-size-banner-title1;
       font-size: 7.5vw;
       color: $font-color-banner-title;
@@ -31,7 +30,7 @@
       position: absolute;
       top: 30%;
       left: 50%;
-      font-family: $font-style-banner-title;
+      font-family: $font-style2;
       // font-size: $font-size-banner-title2;
       font-size: 6vw;
       font-weight: 600;
@@ -39,9 +38,9 @@
     }
     &__cta {
       position: absolute;
-      top: 80%;
+      top: 70%;
       width: 100%;
-      font-family: $font-style-banner-cta;
+      font-family: $font-style3;
       font-size: $font-size-banner-cta;
       font-weight: 300;
       color: $font-color-cta;

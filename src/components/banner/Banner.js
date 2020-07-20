@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.css";
 
 import BannerSlides from "./BannerSlides";
 
-import FetchBannerImages from "../../queries/fetchBannerImages";
+import FetchBannerImages from "../../queries/fetchBannerImages.jsx";
 import FetchBannerSlides from "../../queries/fetchBannerSlides";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -16,7 +16,7 @@ const Banner = () => {
   const bannerImages = FetchBannerImages();
   const slides = FetchBannerSlides();
 
-  console.log(typeof bannerImages.bannerPics.edges);
+  // console.log(typeof bannerImages.bannerPics.edges);
 
   if ({ slides }) {
     return (

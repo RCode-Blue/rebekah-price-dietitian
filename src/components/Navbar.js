@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
 import NavLinks from "../reusables/links";
 
+import "../styles/main.scss";
+import "../styles/navbar.scss";
+
 const NavBar = () => {
   return (
-    <nav>
-      <NavLinks></NavLinks>
+    <nav className="main-nav">
+      <NavLinks />
     </nav>
-  )
-}
+  );
+};
 
 export default NavBar;

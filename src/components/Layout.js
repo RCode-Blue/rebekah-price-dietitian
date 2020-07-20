@@ -5,12 +5,7 @@ import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  return (
-    <>
-      {children}
-      <Navbar></Navbar>
-    </>
-  );
+  return <>{children}</>;
 };
 
 export default Layout;

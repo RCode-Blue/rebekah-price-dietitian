@@ -23,8 +23,10 @@ const BannerSlides = (props) => {
   });
 
   return (
-    <Carousel {...getCarouselProps()} className="banner__slides">
+    <Carousel {...getCarouselProps()} className="banner">
       {props.slides.bannerSlides.edges.map((element) => {
+        console.log(element.node.frontmatter);
+
         const filteredImages = props.bannerImages.bannerPics.edges.filter(
           (edge) => edge.node.name == element.node.frontmatter.imagename
         );
@@ -50,9 +52,13 @@ const BannerSlides = (props) => {
             <div className="slide__text">
               <div className="slide__text__name">{name}</div>
               <div className="slide__text__title">{title}</div>
-              <div className="slide__text__cta">
-                <div>{content}</div>
-                <div>{link}</div>
+              <div className="">
+                <div className="slide__text__cta">
+                  <div>{content}</div>
+                  <div>
+                    <a href={linkurl}>{link}</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

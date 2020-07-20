@@ -1,11 +1,11 @@
 @import "./abstracts/_variables.sass";
 
 .banner {
-  &__slides {
-  }
+  max-height: 90vh;
 }
 
 .slide {
+  // max-height: 90vh;
   &__img {
     position: relative;
   }
@@ -23,7 +23,8 @@
       top: 10%;
       left: 14%;
       font-family: $font-style-banner-title;
-      font-size: $font-size-banner-title1;
+      // font-size: $font-size-banner-title1;
+      font-size: 7.5vw;
       color: $font-color-banner-title;
     }
     &__title {
@@ -31,22 +32,39 @@
       top: 30%;
       left: 50%;
       font-family: $font-style-banner-title;
-      font-size: $font-size-banner-title2;
+      // font-size: $font-size-banner-title2;
+      font-size: 6vw;
       font-weight: 600;
       color: $font-color-banner-title;
     }
     &__cta {
       position: absolute;
-      top: 70%;
+      top: 80%;
       width: 100%;
       font-family: $font-style-banner-cta;
       font-size: $font-size-banner-cta;
       font-weight: 300;
       color: $font-color-cta;
       line-height: 220%;
+      font-size: 1.5vw;
 
       div:nth-child(2) {
         text-transform: uppercase;
+        word-spacing: 0.8rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 40px;
+
+        a:link {
+          text-decoration: none;
+        }
+
+        a:hover {
+          cursor: default;
+        }
+
+        a:visited {
+          color: $font-color-cta;
+        }
       }
     }
   }

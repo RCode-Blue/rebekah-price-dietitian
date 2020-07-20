@@ -20,18 +20,13 @@ const Banner = () => {
 
   if ({ slides }) {
     return (
-      <div className="banner">
+      <div>
         <BannerSlides bannerImages={bannerImages} slides={slides} />
       </div>
     );
   }
 
-  return (
-    <div>
-      <h3>BANNER</h3>
-      <div></div>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Banner;

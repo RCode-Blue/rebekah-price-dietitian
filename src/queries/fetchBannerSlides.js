@@ -19,6 +19,7 @@ const FetchBannerSlides = () => {
               title
               content
               link
+              linkurl
               imagename
             }
           }

@@ -1,0 +1,46 @@
+@import "./abstracts/_variables.sass";
+@import "./shared.scss";
+
+.attrib {
+  background-color: $color-blackbean-5;
+  height: 14rem;
+  color: $color-apricot-1;
+  width: 100vw;
+  padding: 2rem 10vw;
+  font-family: $font-style3;
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+
+  &__header {
+    padding: 1rem;
+    // background-color: green;
+    width: 15%;
+  }
+  &__list {
+    padding: 1rem;
+    // background-color: blue;
+    width: 80%;
+
+    font-family: $font-style3;
+    line-height: 150%;
+
+    &__row {
+      width: 70%;
+    }
+    a:link,
+    a:visited {
+      color: $color-apricot-1;
+      text-decoration: none;
+    }
+    a:hover,
+    a:active {
+      color: $color-apricot-4;
+      cursor: default;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.first-cap {
+  text-transform: capitalize;
+}
+
+@mixin first-caps {
+  text-transform: capitalize;
+}

@@ -1,5 +1,4 @@
-@import "./main.scss";
-
+@import "./abstracts/_variables.sass";
 .main-nav {
   font-family: $font-style3;
   font-size: 1.5rem;
@@ -12,16 +11,16 @@
     margin: 2rem;
     text-transform: uppercase;
   }
-}
 
-a:link,
-a:visited {
-  color: $color-blackbean-3;
-  text-decoration: none;
-}
+  a:link,
+  a:visited {
+    color: $color-blackbean-3;
+    text-decoration: none;
+  }
 
-a:hover,
-a:active {
-  color: $color-blackbean-4;
-  cursor: default;
+  a:hover,
+  a:active {
+    color: $color-blackbean-4;
+    cursor: default;
+  }
 }

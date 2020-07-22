@@ -18,14 +18,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `bannerslides`,
-        path: `${__dirname}/src/content/banner/slides/`,
+        path: `${__dirname}/src/assets/content/banner/slides/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `maincontent`,
-        path: `${__dirname}/src/content/main/`,
+        path: `${__dirname}/src/assets/content/main/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `footercontent`,
+        path: `${__dirname}/src/assets/content/footer/`,
       },
     },
 
@@ -36,7 +43,12 @@ module.exports = {
         checkSupportedExtensions: false,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- endexcerpt -->`,
+      },
+    },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

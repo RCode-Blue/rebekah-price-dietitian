@@ -1,6 +1,6 @@
 import React from "react";
 
-import NavLinks from "../reusables/links";
+import NavLinks from "./reusables/links";
 
 import "../styles/main.scss";
 import "../styles/navbar.scss";

@@ -1,0 +1,39 @@
+@import "./abstracts/_variables.sass";
+@import "/shared.scss";
+
+.expect {
+  background-color: $color-melon-1;
+  &__description {
+    width: 90%;
+    margin: auto;
+  }
+
+  &__rates {
+    width: 90%;
+    margin: auto;
+  }
+  .rate {
+    padding-bottom: 4rem;
+    &__header {
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+    }
+    &__detail {
+      display: flex;
+      flex-wrap: wrap;
+
+      padding: 0.4rem;
+
+      span:first-child {
+        width: 10rem;
+      }
+      span:nth-child(2) {
+        min-width: 22rem;
+      }
+    }
+
+    &__more {
+      padding-top: 3rem;
+    }
+  }
+}

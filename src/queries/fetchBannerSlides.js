@@ -4,7 +4,9 @@ const FetchBannerSlides = () => {
   const BannerSlidesData = useStaticQuery(graphql`
     query {
       bannerSlides: allMarkdownRemark(
-        filter: { frontmatter: { active: { eq: true } } }
+        filter: {
+          frontmatter: { active: { eq: true }, usage: { eq: "banner" } }
+        }
         sort: { fields: frontmatter___index, order: ASC }
       ) {
         totalCount

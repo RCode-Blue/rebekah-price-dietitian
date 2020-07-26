@@ -1,0 +1,28 @@
+@import "./abstracts/_variables.sass";
+
+.clinic {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    // padding: 2rem;
+    button {
+      padding: 2rem;
+    }
+  }
+  &__details {
+    padding: 2rem;
+    background-color: $color-melon-3;
+    & > * {
+      padding: 1rem;
+    }
+    &__address {
+      &__name {
+        padding-bottom: 1.5rem;
+        font-weight: 400;
+      }
+    }
+    &__map {
+      // padding: 1rem;
+    }
+  }
+}

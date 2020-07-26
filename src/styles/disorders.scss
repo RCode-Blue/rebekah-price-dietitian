@@ -1,0 +1,19 @@
+@import "./abstracts/_variables.sass";
+@import "./shared/mixins";
+
+.disorders {
+  background-color: $color-mint-1;
+  &__titles {
+    @include inner-section-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__btn {
+    }
+  }
+  &__details {
+    @include inner-section-width;
+    padding: 2rem;
+    background-color: $color-mint-4;
+  }
+}

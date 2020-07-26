@@ -8,10 +8,6 @@ import "../../styles/attribution.scss";
 const Attribution = () => {
   const data = FetchAttribution();
   if (data) {
-    // const content = attribution.attribution.edges[0].node.html;
-    // const content = attribution.attribution.edges[0].node.internal.content;
-    // console.log(data);
-
     return (
       <div className="attrib">
         <div className="attrib__header">Copyright Attribution</div>
@@ -25,7 +21,6 @@ const Attribution = () => {
               location,
               resource_type,
               resource_url,
-              usage,
               website,
             } = node.frontmatter;
 

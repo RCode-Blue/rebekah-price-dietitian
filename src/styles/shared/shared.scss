@@ -1,0 +1,66 @@
+@use "../abstracts/_variables.sass";
+@import "./mixins";
+
+.first-cap {
+  text-transform: capitalize;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.section-layout {
+  width: 100vw;
+
+  padding: 8rem 15vw;
+  margin: auto;
+  p {
+    padding-bottom: 2rem;
+  }
+  ul {
+    padding-bottom: 2rem;
+    li {
+      margin-left: 2rem;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.section-inner-row {
+  display: flex;
+  justify-content: center;
+}
+
+.section-text,
+button {
+  font-family: $font-style1;
+  font-weight: 300;
+  font-size: 1.8rem;
+  border-color: transparent;
+
+  &:active {
+    border-color: transparent;
+  }
+}
+
+.btn {
+  padding: 2rem;
+  border-color: transparent;
+  &__passive {
+    background: transparent;
+    border-color: transparent;
+  }
+  &__active {
+    &__mint {
+      background: $color-mint-4;
+      border-color: transparent;
+    }
+    &__melon {
+      background: $color-melon-3;
+      border-color: transparent;
+    }
+  }
+}

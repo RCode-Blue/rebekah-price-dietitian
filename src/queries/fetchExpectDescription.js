@@ -5,6 +5,7 @@ const FetchExpectDescription = () => {
     query {
       markdownRemark(
         frontmatter: {
+          active: { eq: true }
           usage: { eq: "expect" }
           location: { eq: "description" }
         }

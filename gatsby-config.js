@@ -17,43 +17,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `bannerslides`,
-        path: `${__dirname}/src/assets/content/banner/slides/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `maincontent`,
-        path: `${__dirname}/src/assets/content/main/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `about`,
-        path: `${__dirname}/src/assets/content/about/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `about`,
-        path: `${__dirname}/src/assets/content/expect/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `about`,
-        path: `${__dirname}/src/assets/content/rates/`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `footercontent`,
-        path: `${__dirname}/src/assets/content/footer/`,
+        name: `content`,
+        path: `${__dirname}/src/content/`,
       },
     },
 

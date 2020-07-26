@@ -31,10 +31,8 @@ const BannerSlides = (props) => {
 
         const id = element.node.id;
         const {
-          active,
           content,
           imagename,
-          index,
           link,
           linkurl,
           name,

@@ -13,7 +13,7 @@ const navLinks = [
   {
     id: 2,
     text: "about",
-    url: "/about/",
+    url: "/about#about",
   },
   {
     id: 3,
@@ -23,17 +23,17 @@ const navLinks = [
   {
     id: 4,
     text: "work with me",
-    url: "/wwme/",
+    url: "/about#expect",
   },
   {
     id: 5,
     text: "make an appointment",
-    url: "/appointment/",
+    url: "/services#locations",
   },
   {
     id: 6,
     text: "contact",
-    url: "/contact/",
+    url: "/services#locations",
   },
 ];
 

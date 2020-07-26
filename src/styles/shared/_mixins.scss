@@ -1,0 +1,6 @@
+@import "../abstracts/_variables.sass";
+
+@mixin inner-section-width {
+  max-width: $section-inner-width-max;
+  margin: auto;
+}

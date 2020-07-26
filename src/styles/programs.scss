@@ -1,0 +1,19 @@
+@import "./abstracts/_variables.sass";
+@import "./shared/mixins";
+
+.programs {
+  background-color: $color-melon-1;
+  &__titles {
+    @include inner-section-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__btn {
+    }
+  }
+  &__details {
+    @include inner-section-width;
+    padding: 2rem;
+    background-color: $color-melon-3;
+  }
+}

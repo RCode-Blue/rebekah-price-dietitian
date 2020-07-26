@@ -4,7 +4,9 @@ const FetchAttribution = () => {
   const AttributionContent = useStaticQuery(graphql`
     query {
       attribution: allMarkdownRemark(
-        filter: { frontmatter: { usage: { eq: "attribution" } } }
+        filter: {
+          frontmatter: { usage: { eq: "attribution" }, active: { eq: true } }
+        }
         sort: { fields: frontmatter___index, order: ASC }
       ) {
         nodes {

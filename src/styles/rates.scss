@@ -1,0 +1,35 @@
+@import "./abstracts/_variables.sass";
+@import "./shared/shared.scss";
+
+.rates {
+  // background-color: $color-mint-1;
+}
+
+.rate {
+  padding-bottom: 4rem;
+  max-width: $section-inner-width-max;
+  &__header {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  &__detail {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0.2rem;
+
+    span:first-child {
+      width: 10rem;
+    }
+    span:nth-child(2) {
+      min-width: 22rem;
+    }
+  }
+
+  &__more {
+    padding-top: 3rem;
+    p {
+      line-height: 140%;
+    }
+  }
+}

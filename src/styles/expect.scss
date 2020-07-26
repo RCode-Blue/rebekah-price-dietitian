@@ -1,5 +1,5 @@
 @import "./abstracts/_variables.sass";
-@import "/shared.scss";
+@import "./shared/shared.scss";
 
 .expect {
   background-color: $color-melon-1;
@@ -8,10 +8,10 @@
     margin: auto;
   }
 
-  &__rates {
-    width: 90%;
-    margin: auto;
-  }
+  // &__rates {
+  //   width: 90%;
+  //   margin: auto;
+  // }
   .rate {
     padding-bottom: 4rem;
     &__header {

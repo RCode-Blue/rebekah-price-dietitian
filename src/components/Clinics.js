@@ -7,7 +7,6 @@ import "../styles/clinics.scss";
 
 const Clinics = () => {
   const data = FetchClinics();
-  console.log(data.allMarkdownRemark);
 
   if (data) {
     const {

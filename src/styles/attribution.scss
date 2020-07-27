@@ -3,33 +3,45 @@
 
 .attrib {
   background-color: $color-blackbean-5;
-  height: 14rem;
+  // height: 14rem;
   color: $color-apricot-1;
   width: 100vw;
-  padding: 2rem 10vw;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   font-family: $font-style3;
   font-weight: 300;
   font-size: 1.2rem;
 
   display: flex;
   justify-content: center;
-  // align-items: center;
 
   &__header {
     padding: 1rem;
-    // background-color: green;
-    width: 15%;
   }
   &__list {
     padding: 1rem;
-    // background-color: blue;
-    width: 80%;
+    width: 50%;
+    columns: 10rem 2;
 
     font-family: $font-style3;
     line-height: 150%;
 
     &__row {
-      width: 70%;
+      height: 5rem;
+      padding-left: 2rem;
+      padding-bottom: 0.8rem;
+      display: flex;
+      > * {
+        margin: auto;
+      }
+      i {
+        padding-right: 0.8rem;
+        font-size: 0.9rem;
+      }
+
+      div {
+        word-spacing: 0.25rem;
+      }
     }
     a:link,
     a:visited {
@@ -43,4 +55,8 @@
       text-decoration: underline;
     }
   }
+}
+
+.attrib-row-wrap {
+  display: flex;
 }

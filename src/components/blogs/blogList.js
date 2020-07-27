@@ -8,17 +8,14 @@ import "../../styles/bloglist.scss";
 
 const BlogList = (props) => {
   const data = FetchBlogs(props.type);
-  console.log(props);
 
   const {
     allMarkdownRemark: { nodes },
   } = data;
-  // console.log(nodes);
 
   return (
     <div className="bloglist-wrapper section-layout">
       {nodes.map((node) => {
-        // console.log(node);
         const { id, excerpt } = node;
         const { slug, title } = node.frontmatter;
         return (

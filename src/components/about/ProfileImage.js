@@ -8,7 +8,6 @@ import "../../styles/about.scss";
 
 const ProfileImage = () => {
   const data = FetchProfileImage();
-  // console.log(data.allFile.edges[0].node.childImageSharp.fluid);
   const image = data.allFile.edges[0].node.childImageSharp.fluid;
 
   return (

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import FetchDisorders from "../../queries/fetchDisorders";
 
 import "../../styles/main.scss";
-// import "../../styles/shared/shared.scss";
 import "../../styles/disorders.scss";
 
 const Disorders = () => {

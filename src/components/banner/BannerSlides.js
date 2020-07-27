@@ -8,10 +8,10 @@ import "../../styles/banner.scss";
 
 const BannerSlides = (props) => {
   const getCarouselProps = () => ({
-    autoPlay: false,
-    interval: 3000,
+    autoPlay: true,
+    interval: 20000,
     infiniteLoop: true,
-    transitionTime: 600,
+    transitionTime: 800,
     showThumbs: false,
     showArrows: true,
     useKeyboardArrows: true,

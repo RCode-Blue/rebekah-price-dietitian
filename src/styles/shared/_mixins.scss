@@ -1,6 +1,28 @@
 @import "../abstracts/_variables.sass";
 
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 55em) {
+      @content;
+    } //880px
+  }
+
+  @if $breakpoint == mob {
+    @media only screen and (max-width: 35em) {
+      @content;
+    } // 550px
+  }
+}
+
 @mixin inner-section-width {
   max-width: $section-inner-width-max;
   margin: auto;
+
+  @include respond(tab) {
+    max-width: $section-inner-width-tab;
+  }
+
+  @include respond(mob) {
+    max-width: $section-inner-width-mob;
+  }
 }

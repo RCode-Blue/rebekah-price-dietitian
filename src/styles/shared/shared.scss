@@ -10,6 +10,14 @@ h3 {
   font-size: 3rem;
   padding: 4rem;
   text-align: center;
+
+  @include respond(tab) {
+    font-size: 2.8rem;
+  }
+
+  @include respond(mob) {
+    font-size: 2.6rem;
+  }
 }
 
 h4 {
@@ -38,6 +46,9 @@ h4 {
 .section-inner-row {
   display: flex;
   justify-content: center;
+  @include respond(tab) {
+    flex-direction: column;
+  }
 }
 
 .section-text,
@@ -46,6 +57,14 @@ button {
   font-weight: 300;
   font-size: 1.8rem;
   border-color: transparent;
+
+  @include respond(tab) {
+    font-size: 1.8rem;
+  }
+
+  @include respond(mob) {
+    font-size: 1.5rem;
+  }
 
   &:active {
     border-color: transparent;

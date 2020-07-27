@@ -1,4 +1,4 @@
-@import "./abstracts/_variables.sass";
+@import "./main.scss";
 
 .contact-form {
   padding: 4rem;
@@ -8,11 +8,15 @@
   font-weight: 300;
   font-size: 2rem;
 
-  // h3 {
-  //   font-weight: 300;
-  //   font-size: 3rem;
-  //   padding: 4rem;
-  // }
+  @include respond(tab) {
+    padding: 3rem;
+    font-size: 1.8rem;
+  }
+
+  @include respond(mob) {
+    padding: 2rem;
+    // font-size: 1.7rem;
+  }
 
   &__input {
     > * {
@@ -25,7 +29,7 @@
   &__button {
     margin: 1rem auto;
     padding: 0.7rem 2rem;
-    font-size: 2rem;
+    // font-size: 2rem;
     text-transform: uppercase;
     background-color: $color-mint-2;
   }

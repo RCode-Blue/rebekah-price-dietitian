@@ -16,8 +16,6 @@ const Banner = () => {
   const bannerImages = FetchBannerImages();
   const slides = FetchBannerSlides();
 
-  // console.log(typeof bannerImages.bannerPics.edges);
-
   if ({ slides }) {
     return (
       <div>

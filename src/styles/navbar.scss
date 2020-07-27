@@ -1,4 +1,6 @@
 @import "./abstracts/_variables.sass";
+@import "./shared/mixins";
+
 .main-nav {
   font-family: $font-style3;
   font-size: 1.5rem;
@@ -10,6 +12,16 @@
     display: inline-block;
     margin: 2rem;
     text-transform: uppercase;
+
+    @include respond(tab) {
+      margin: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    @include respond(mob) {
+      margin: 1.2rem;
+      font-size: 1.3rem;
+    }
   }
 
   a:link,

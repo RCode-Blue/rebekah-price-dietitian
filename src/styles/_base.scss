@@ -9,4 +9,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @include respond(tab) {
+    font-size: 56.3%;
+  }
+
+  @include respond(mob) {
+    font-size: 50%;
+  }
 }

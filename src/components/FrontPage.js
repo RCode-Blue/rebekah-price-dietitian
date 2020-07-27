@@ -11,7 +11,6 @@ const FrontPage = () => {
     const mainText =
       content.frontPageContent.edges[0].node.htmlAst.children[0].children[0]
         .value;
-    // console.log(mainText);
     return (
       <div className="main-text">
         <p className="main-text__content">{mainText}</p>

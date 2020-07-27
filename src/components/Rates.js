@@ -6,7 +6,6 @@ import "../styles/main.scss";
 import "../styles/rates.scss";
 
 const RenderRates = (props) => {
-  // console.log(props);
   const { description, duration, medium, rate } = props.node.frontmatter;
   const { html, id } = props.node;
   return (

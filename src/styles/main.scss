@@ -1,4 +1,6 @@
+@import "./shared/mixins";
 @import "./abstracts/variables";
 @import "./base";
 @import "./shared/shared.scss";
-@import "./shared//mixins";
+@import "../vendor/fontawesome/scss/fontawesome.scss";
+@import "../vendor/fontawesome/scss/solid.scss";

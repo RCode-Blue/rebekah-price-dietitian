@@ -1,0 +1,33 @@
+@import "./abstracts/_variables.sass";
+
+.bloglist-wrapper {
+}
+
+.blog {
+  max-width: $section-inner-width-max;
+  &__title {
+    font-family: $font-style1;
+  }
+  &__text {
+    padding: 2rem;
+  }
+  &__link {
+    padding: 0 0 4rem 2rem;
+    font-family: $font-style1;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: $color-blackbean-3;
+  }
+
+  a:link,
+  a:visited {
+    color: $color-blackbean-3;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    color: $color-blackbean-4;
+    cursor: default;
+  }
+}

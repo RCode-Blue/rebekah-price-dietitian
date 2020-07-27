@@ -6,6 +6,7 @@ import Disorders from "../components/services_/disorders";
 import Programs from "../components/services_/programs";
 import Footer from "../components/footer/Footer";
 import Clinics from "../components/Clinics";
+import Attribution from "../components/footer/Attribution";
 
 export default function Services() {
   return (
@@ -15,6 +16,7 @@ export default function Services() {
       <Programs />
       <Clinics />
       <Footer />
+      <Attribution />
     </Layout>
   );
 }

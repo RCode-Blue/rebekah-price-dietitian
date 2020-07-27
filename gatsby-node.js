@@ -38,13 +38,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: {
-          frontmatter: {
-            active: { eq: true }
-            usage: { eq: "blog" }
-            location: { eq: "recipe" }
-          }
-        }
+        filter: { frontmatter: { active: { eq: true }, usage: { eq: "blog" } } }
         sort: { fields: frontmatter___name, order: ASC }
       ) {
         nodes {
@@ -63,14 +57,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  console.log("-----------");
-  console.log(result.data.allMarkdownRemark.nodes);
-  console.log("-----------");
-
   result.data.allMarkdownRemark.nodes.map((node) => {
-    console.log("xxxxxxxxxx");
-    console.log(node);
-    console.log("xxxxxxxxxx");
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,

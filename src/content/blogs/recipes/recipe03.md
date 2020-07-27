@@ -4,7 +4,7 @@ location: "recipe"
 tags: ["recipe", "low-fat"]
 active: true
 
-slug: "/blog/03"
+slug: "/blogs/03"
 title: "Guacamole"
 ---
 <p>Truly the best guacamole recipe. It's so easy to make with these simple tips! cookieandkate.com

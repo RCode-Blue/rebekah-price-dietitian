@@ -4,7 +4,7 @@ location: "recipe"
 tags: ["recipe", "gluten-free"]
 active: true
 
-slug: "/blog/06"
+slug: "/blogs/06"
 title: "Sweet Carrot Cake"
 ---
 <p>This homemade carrot cake would be perfect for any celebratory occasion. It’s exactly what I want my carrot cake to be: delicious and moist. This cake is also simple to make from scratch with wholesome ingredients. You can easily make it in an afternoon, with plenty of time to kill while the cake cools.</p>

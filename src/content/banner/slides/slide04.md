@@ -8,6 +8,6 @@ name: "Rebekah Price"
 title: "Dietitian"
 content: "Nutrition that works for you"
 link: "view recipes"
-linkurl: "#"
+linkurl: "blogs/recipes"
 imagename: "banner_04(16x9)"
 ---

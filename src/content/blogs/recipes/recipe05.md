@@ -4,7 +4,7 @@ location: "recipe"
 tags: ["recipe", "gluten-free"]
 active: true
 
-slug: "/blog/05"
+slug: "/blogs/05"
 title: "Baked Macaroni & Cheese"
 ---
 <p>Baked macaroni and cheese doesn’t have to be complicated with layers of ingredients to be the soul-warming food you crave. This homemade baked macaroni and cheese is my most favorite and  has pleased crowds, small families, kids and picky eaters alike–give it a try and you’ll see why.</p>

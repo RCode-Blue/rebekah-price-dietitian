@@ -4,7 +4,7 @@ location: "recipe"
 tags: ["diabetic", "low-fat"]
 active: true
 
-slug: "/blog/02"
+slug: "/blogs/02"
 title: "Peach Cobbler"
 ---
 <p>What could be a more perfect ending to a summertime meal than easy peach cobbler? Savor the flavors of summer with sliced fresh peaches cooking away with butter and spices. The topping can made from pantry ingredients you have on hand and peaches can easily be substituted with any fruit you have depending on the time of year.</p> 

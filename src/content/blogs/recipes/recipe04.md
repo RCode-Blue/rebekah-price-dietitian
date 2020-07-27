@@ -4,7 +4,7 @@ location: "recipe"
 tags: ["recipe", "Gluten-Free", "Nut-Free", "Vegan"]
 active: true
 
-slug: "/blog/04"
+slug: "/blogs/04"
 title: "Nut-Free Chocolate Protein Bar"
 ---
 <p>You can’t go wrong with homemade protein bars, such as peanut butter protein bars and no bake protein bars. Chocolate protein bars are also on rotation, especially when the chocolate cravings strike! 

@@ -8,6 +8,6 @@ name: "Rebekah Price"
 title: "Dietitian"
 content: "Come back to conscious living"
 link: "read blog"
-linkurl: "#"
+linkurl: "/blogs/"
 imagename: "banner_03(16x9)"
 ---

@@ -7,9 +7,9 @@ active: true
 slug: "/blog/01"
 title: "Sugar Free Chocolate Cake"
 ---
-<p>Flourless chocolate cake has always been my favorite dessert — both to make at home and to order in restaurants or bakeries.
+<p>Flourless chocolate cake has always been my favorite dessert — both to make at home and to order in restaurants or bakeries.</p>
 
-Flourless chocolate cake, which is gluten-free to begin with, is made by combining butter, chocolate, eggs, sugar and cocoa powder. My Easy Sugar-Free Flourless Chocolate Cake has been my favorite classic to adapt in a healthier way thus far, as it really is just a few simple swaps away from being a dessert that can be much, much better for you</</p>
+<p>Flourless chocolate cake, which is gluten-free to begin with, is made by combining butter, chocolate, eggs, sugar and cocoa powder. My Easy Sugar-Free Flourless Chocolate Cake has been my favorite classic to adapt in a healthier way thus far, as it really is just a few simple swaps away from being a dessert that can be much, much better for you</p>
 
 <!-- endexcerpt -->
 

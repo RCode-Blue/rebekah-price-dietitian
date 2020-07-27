@@ -32,8 +32,8 @@ const navLinks = [
   },
   {
     id: 6,
-    text: "contact",
-    url: "/services#locations",
+    text: "blogs",
+    url: "/blogs/",
   },
 ];
 

@@ -16,7 +16,7 @@ export default function Template({ data }) {
   return (
     <div>
       <Navbar />
-      <div className="blog section-layout section-text">
+      <div className="blog section-wrap section-text">
         <div className="blog__post">
           <h3>{frontmatter.title}</h3>
           <div

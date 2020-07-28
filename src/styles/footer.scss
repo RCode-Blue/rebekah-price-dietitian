@@ -1,4 +1,5 @@
 @import "./abstracts/_variables.sass";
+@import "./shared/mixins";
 
 .footer {
   padding: 2rem;
@@ -7,6 +8,16 @@
   font-family: $font-style3;
   font-size: 1.2rem;
   font-weight: 400;
+
+  @include respond(tab) {
+    margin: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  @include respond(mob) {
+    margin: 1.2rem;
+    font-size: 1.3rem;
+  }
 
   &__nav {
     text-align: center;

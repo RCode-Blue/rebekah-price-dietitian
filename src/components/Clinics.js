@@ -32,7 +32,7 @@ const Clinics = () => {
     } = clinics[val];
 
     return (
-      <section className="clinics section-text section-layout">
+      <section className="clinics section-text section-wrap">
         <h3 name="locations">Locations</h3>
         <div className="section-inner-row">
           {" "}

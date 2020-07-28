@@ -14,7 +14,7 @@ const BlogList = (props) => {
   } = data;
 
   return (
-    <div className="bloglist-wrapper section-layout">
+    <div className="bloglist-wrapper section-wrap">
       {nodes.map((node) => {
         const { id, excerpt } = node;
         const { slug, title } = node.frontmatter;

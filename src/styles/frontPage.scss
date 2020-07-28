@@ -6,8 +6,7 @@
   font-weight: 300;
   font-size: 2.2rem;
   color: $color-blackbean-6;
-  padding: 8rem 20rem;
-  background-color: $color-mint-1;
+  // padding: 8rem 20rem;
 
   @include respond(tab) {
     padding: 5rem 8.5rem;

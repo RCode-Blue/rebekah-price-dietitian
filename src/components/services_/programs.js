@@ -22,7 +22,7 @@ const Programs = () => {
     } = programs[val];
 
     return (
-      <section className="programs section-text section-layout">
+      <section className="programs section-text section-wrap">
         <h3>Programs</h3>
         <div className="programs__titles">
           {programs.map((program, index) => {

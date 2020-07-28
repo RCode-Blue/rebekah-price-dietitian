@@ -1,29 +1,62 @@
 @import "./abstracts/_variables.sass";
 @import "./shared/mixins";
 
+.clinics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .clinic {
   &__title {
     display: flex;
     flex-direction: column;
-    // padding: 2rem;
+    width: 30%;
     button {
       padding: 2rem;
     }
+    @include respond(tab) {
+      width: 100%;
+    }
   }
   &__details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     background-color: $color-melon-3;
+
+    @include respond(tab) {
+      width: 100%;
+    }
+
     & > * {
       padding: 1rem;
     }
     &__address {
+      width: 100%;
+      padding: 1rem;
+      margin: auto;
       &__name {
         padding-bottom: 1.5rem;
         font-weight: 400;
       }
     }
+
+    padding-bottom: 4rem;
     &__map {
-      // padding: 1rem;
+      display: flex;
+      width: 100%;
+      height: 50vh;
+      position: relative;
+
+      @include respond(tab) {
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
     }
   }
 }

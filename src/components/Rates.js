@@ -38,15 +38,17 @@ const Rates = () => {
       allMarkdownRemark: { nodes },
     } = data;
     return (
-      <section className="rates section-text section-layout">
-        <h3>Rates</h3>
-        {nodes.map((node) => {
-          return (
-            <div key={node.id}>
-              <RenderRates node={node} />
-            </div>
-          );
-        })}
+      <section className="section-text section-wrap section-bg-mint">
+        <div className="rates">
+          <h3>Rates</h3>
+          {nodes.map((node) => {
+            return (
+              <div key={node.id}>
+                <RenderRates node={node} />
+              </div>
+            );
+          })}
+        </div>
       </section>
     );
   }

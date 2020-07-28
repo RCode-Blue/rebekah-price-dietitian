@@ -21,29 +21,30 @@ const Disorders = () => {
     } = disorders[val];
 
     return (
-      <section className="disorders section-text section-layout">
-        <h3>Services</h3>
-
-        <div className="disorders__titles">
-          {disorders.map((disorder, index) => {
-            return (
-              <button
-                className={`${
-                  index === val ? "btn btn__active__mint" : "btn btn__passive"
-                }`}
-                key={disorder.id}
-                onClick={() => {
-                  setVal(index);
-                }}
-              >
-                {disorder.frontmatter.title}
-              </button>
-            );
-          })}
+      <section className="section-text section-wrap section-bg-mint">
+        <div className="disorders">
+          <h3>Services</h3>
+          <div className="disorders__titles">
+            {disorders.map((disorder, index) => {
+              return (
+                <button
+                  className={`${
+                    index === val ? "btn btn__active__mint" : "btn btn__passive"
+                  }`}
+                  key={disorder.id}
+                  onClick={() => {
+                    setVal(index);
+                  }}
+                >
+                  {disorder.frontmatter.title}
+                </button>
+              );
+            })}
+          </div>
+          <article className="disorders__details">
+            <div dangerouslySetInnerHTML={{ __html: html }}></div>
+          </article>
         </div>
-        <article className="disorders__details">
-          <div dangerouslySetInnerHTML={{ __html: html }}></div>
-        </article>
       </section>
     );
   }

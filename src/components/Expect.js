@@ -22,9 +22,11 @@ const Description = () => {
 
 const Expect = () => {
   return (
-    <section className="expect section-text section-layout">
-      <a name="expect"></a>
-      <Description />
+    <section className="section-wrap section-text section-bg-melon">
+      <div className="expect">
+        <a name="expect"></a>
+        <Description />
+      </div>
     </section>
   );
 };

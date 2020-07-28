@@ -1,8 +1,6 @@
 @import "./main.scss";
 
 .contact-form {
-  padding: 4rem;
-  background-color: $color-melon-1;
   text-align: center;
   font-family: $font-style1;
   font-weight: 300;
@@ -15,7 +13,6 @@
 
   @include respond(mob) {
     padding: 2rem;
-    // font-size: 1.7rem;
   }
 
   &__input {
@@ -29,7 +26,6 @@
   &__button {
     margin: 1rem auto;
     padding: 0.7rem 2rem;
-    // font-size: 2rem;
     text-transform: uppercase;
     background-color: $color-mint-2;
   }

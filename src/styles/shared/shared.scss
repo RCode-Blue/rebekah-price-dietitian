@@ -120,3 +120,15 @@ button {
     }
   }
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: default;
+}
+
+a:visited {
+  color: $font-color-cta;
+}

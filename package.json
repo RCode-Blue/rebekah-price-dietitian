@@ -35,7 +35,6 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^2.6.16",
     "gatsby-source-filesystem": "^2.3.11",
-    "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-sharp": "^2.5.9",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

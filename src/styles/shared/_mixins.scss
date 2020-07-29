@@ -1,6 +1,13 @@
 @import "../abstracts/_variables.sass";
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == tab-hor {
+    @media only screen and (max-width: 72em) {
+      @content;
+    }
+  }
+  // 1150px
+
   @if $breakpoint == tab {
     @media only screen and (max-width: 55em) {
       @content;

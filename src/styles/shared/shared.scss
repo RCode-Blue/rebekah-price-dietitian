@@ -39,8 +39,12 @@ h4 {
   padding: 8rem 15vw;
   // margin: auto;
 
+  @include respond(tab-hor) {
+    padding: 4rem 6rem;
+  }
+
   @include respond(tab) {
-    padding: 4rem 8rem;
+    padding: 4rem 5rem;
   }
 
   @include respond(mob) {

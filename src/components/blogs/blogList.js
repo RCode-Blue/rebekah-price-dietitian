@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 
 import FetchBlogs from "../../queries/blogQueries/_fetchBlogsMain";
+import FetchContentfulBlogs from "../../queries/blogQueries/_fetchContentfulBlogsMain";
 
 import "../../styles/main.scss";
 import "../../styles/bloglist.scss";
 
 const BlogList = (props) => {
   const data = FetchBlogs(props.type);
+  const contentfulData = FetchContentfulBlogs(props.type);
+
+  console.log(contentfulData);
 
   const {
     allMarkdownRemark: { nodes },

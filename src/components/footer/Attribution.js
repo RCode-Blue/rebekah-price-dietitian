@@ -24,7 +24,7 @@ const Attribution = () => {
 
             return (
               <div className="attrib__list__row" key={id}>
-                <i class="fas fa-asterisk"></i>
+                <i className="fas fa-asterisk"></i>
                 <div>
                   <span className="first-cap">{location}</span>{" "}
                   <span>{resource_type}</span> by{" "}

@@ -52,6 +52,10 @@ const Rates = () => {
       </section>
     );
   }
-  return <div className="">rates</div>;
+  return (
+    <div>
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+  );
 };
 export default Rates;

@@ -2,9 +2,9 @@
 @import "./shared/mixins";
 
 .err-404 {
+  position: relative;
+
   &__image {
-    position: relative;
-    // max-height: 60vh;
   }
 
   &__txt {

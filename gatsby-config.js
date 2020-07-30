@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Rebekah Price Dietitian",
@@ -7,6 +11,15 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        // spaceId: `3psh3y2v1mnb`,
+        // accessToken: `3qCdr4g2HDfthO7DDle8NtGwtg2ahM_qcVHUIe50Lp4`,
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.ACCESS_TOKEN,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

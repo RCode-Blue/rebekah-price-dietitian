@@ -26,7 +26,11 @@ const Err404 = () => {
     );
   }
 
-  return <div>404</div>;
+  return (
+    <div>
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+  );
 };
 
 export default Err404;

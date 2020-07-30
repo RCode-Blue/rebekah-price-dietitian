@@ -19,7 +19,11 @@ const FrontPage = () => {
       </section>
     );
   }
-  return <div className="">Front Page</div>;
+  return (
+    <div className="">
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+  );
 };
 
 export default FrontPage;

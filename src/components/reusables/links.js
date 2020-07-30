@@ -35,6 +35,11 @@ const navLinks = [
     text: "blogs",
     url: "/blogs/",
   },
+  {
+    id: 7,
+    text: "contentful blogs",
+    url: "/blogs/contentfulblogs/",
+  },
 ];
 
 const linkList = navLinks.map((navLink) => {

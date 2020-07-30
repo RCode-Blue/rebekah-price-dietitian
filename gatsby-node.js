@@ -31,21 +31,58 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
+// exports.createPages = async ({ actions, graphql, reporter }) => {
+//   const { createPage } = actions;
+//   const blogPostTemplate = require.resolve("./src/templates/blogTemplate.js");
+
+//   const result = await graphql(`
+//     {
+//       allMarkdownRemark(
+//         filter: { frontmatter: { active: { eq: true }, usage: { eq: "blog" } } }
+//         sort: { fields: frontmatter___name, order: ASC }
+//       ) {
+//         nodes {
+//           frontmatter {
+//             slug
+//             title
+//           }
+//         }
+//       }
+//     }
+//   `);
+
+//   // Handle errors
+//   if (result.errors) {
+//     reporter.panicOnBuild(`Error while running GraphQL query.`);
+//     return;
+//   }
+
+//   result.data.allMarkdownRemark.nodes.map((node) => {
+//     createPage({
+//       path: node.frontmatter.slug,
+//       component: blogPostTemplate,
+//       context: {
+//         slug: node.frontmatter.slug,
+//       },
+//     });
+//   });
+// };
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-  const blogPostTemplate = require.resolve("./src/templates/blogTemplate.js");
+  const blogPostTemplate = require.resolve(
+    "./src/templates/contentfulBlogTemplate.js"
+  );
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        filter: { frontmatter: { active: { eq: true }, usage: { eq: "blog" } } }
-        sort: { fields: frontmatter___name, order: ASC }
+      allContentfulRpdBlog(
+        filter: { active: { eq: true }, usage: { eq: "blog" } }
       ) {
+        totalCount
         nodes {
-          frontmatter {
-            slug
-            title
-          }
+          title
+          slug
         }
       }
     }
@@ -57,12 +94,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
-  result.data.allMarkdownRemark.nodes.map((node) => {
+  result.data.allContentfulRpdBlog.nodes.map((node) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: node.slug,
       component: blogPostTemplate,
       context: {
-        slug: node.frontmatter.slug,
+        slug: node.slug,
       },
     });
   });

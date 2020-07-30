@@ -77,7 +77,11 @@ const Clinics = () => {
     );
   }
 
-  return <div className="">Clinics</div>;
+  return (
+    <div>
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+  );
 };
 
 export default Clinics;

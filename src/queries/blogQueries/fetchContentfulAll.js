@@ -8,6 +8,9 @@ const FetchAllBlogs = () => {
       ) {
         totalCount
         nodes {
+          title
+          slug
+          id
           blogEntry {
             json
           }

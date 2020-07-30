@@ -9,9 +9,6 @@ import "../../styles/bloglist.scss";
 
 const BlogList = (props) => {
   const data = FetchBlogs(props.type);
-  const contentfulData = FetchContentfulBlogs(props.type);
-
-  console.log(contentfulData);
 
   const {
     allMarkdownRemark: { nodes },

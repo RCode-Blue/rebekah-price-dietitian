@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { BLOCKS } from "@contentful/rich-text-types";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+// import { BLOCKS } from "@contentful/rich-text-types";
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-import FetchBlogs from "../../queries/blogQueries/_fetchBlogsMain";
+// import FetchBlogs from "../../queries/blogQueries/_fetchBlogsMain";
 import FetchContentfulBlogs from "../../queries/blogQueries/_fetchContentfulBlogsMain";
 
-import "../../styles/main.scss";
-import "../../styles/bloglist.scss";
+// import "../../styles/main.scss";
+// import "../../styles/bloglist.scss";
 
 const BlogList = (props) => {
   // console.log(props);
@@ -40,36 +40,47 @@ const BlogList = (props) => {
 };
 
 const ContentfulBlogList = (props) => {
-  console.log(props.data.blogEntry);
-
-  const options = {
-    renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
-      [BLOCKS.HEADING_3]: (node, children) => <h3>{children}</h3>,
-      [BLOCKS.HEADING_4]: (node, children) => <h4>{children}</h4>,
-      [BLOCKS.UL_LIST]: (node, children) => <ul>{children}</ul>,
-      [BLOCKS.OL_LIST]: (node, children) => <ol>{children}</ol>,
-      [BLOCKS.LIST_ITEM]: (node, children) => <li>{children}</li>,
-      [BLOCKS.HR]: (node, children) => <hr />,
-    },
-  };
+  console.log(props.data);
 
   return (
     <div>
-      {documentToReactComponents(JSON.parse(props.data.blogEntry), options)}
+      {props.data.map((node) => {
+        return (
+          <div className="blog" key={node.id}>
+            <h4 className="blog__title">{node.title}</h4>
+            <Link to={node.slug}>
+              <div className="blog__link">read more...</div>
+            </Link>
+          </div>
+        );
+      })}
     </div>
   );
+
+  // props.data.map((node) => {
+  //   console.log(node);
+  //   return (
+  //     <div className="blog" key={node.id}>
+  //       <h4 className="blog__title">{node.title}</h4>
+  //       <Link to={node.slug}>
+  //         <div className="blog__link">read more...</div>
+  //       </Link>
+  //     </div>
+  //   );
+  // });
+
+  // return <div>nothing</div>;
 };
 
 const MainBlogList = (props) => {
-  console.log(props);
-  const data = FetchBlogs(props.type);
+  // console.log(props);
+  // const data = FetchBlogs(props.type);
   const contentfulData = FetchContentfulBlogs(props.type);
 
   if (contentfulData) {
     // console.log(contentfulData.allContentfulRpdBlog.nodes);
 
-    const data = contentfulData.allContentfulRpdBlog.nodes[0].blogEntry;
+    const data = contentfulData.allContentfulRpdBlog.nodes;
 
     return (
       <div>
@@ -78,7 +89,7 @@ const MainBlogList = (props) => {
     );
   }
 
-  return <div>MainBlogList</div>;
+  return <div></div>;
 };
 
 export default MainBlogList;

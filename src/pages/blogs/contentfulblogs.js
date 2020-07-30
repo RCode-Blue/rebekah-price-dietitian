@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Navbar />
-      <ContentfulBlogList type="test" />
+      <ContentfulBlogList type="" />
     </Layout>
   );
 }

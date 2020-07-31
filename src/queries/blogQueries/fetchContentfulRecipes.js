@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby";
+import Image from "gatsby-image";
 
-const FetchBlogs = () => {
-  const blogsData = useStaticQuery(graphql`
+const FetchAllBlogs = () => {
+  const allBlogsData = useStaticQuery(graphql`
     query {
       allContentfulRpdBlog(
         filter: {
@@ -13,23 +14,26 @@ const FetchBlogs = () => {
         totalCount
         nodes {
           title
-          usage
-          location
-          active
           slug
-          blogEntry {
-            content {
-              content {
-                value
-              }
+          id
+          intro {
+            intro
+          }
+          picture {
+            description
+            fluid {
+              src
+              ...GatsbyContentfulFluid
             }
-            blogEntry
+          }
+          blogEntry {
+            json
           }
         }
       }
     }
   `);
-  return blogsData;
+  return allBlogsData;
 };
 
-export default FetchBlogs;
+export default FetchAllBlogs;

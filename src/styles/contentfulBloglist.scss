@@ -1,0 +1,48 @@
+@import "./abstracts/_variables.sass";
+
+.bloglist-wrapper {
+  max-width: $section-inner-width-max;
+  padding-top: 5rem;
+  margin: auto;
+  font-family: $font-style1;
+}
+
+.blog {
+  display: flex;
+  flex-flow: row wrap;
+
+  &__thumb {
+    flex-basis: 30rem;
+    margin: auto;
+  }
+  &__text {
+    flex-basis: 60rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    // font-family: $font-style1;
+    &__title {
+    }
+    &__summary {
+      padding: 1.5rem;
+    }
+    &__link {
+      padding: 0 0 4rem 2rem;
+      font-family: $font-style1;
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: $color-blackbean-3;
+    }
+  }
+}
+
+a:link,
+a:visited {
+  color: $color-blackbean-3;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $color-blackbean-4;
+  cursor: default;
+}

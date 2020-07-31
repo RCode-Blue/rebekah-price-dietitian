@@ -33,11 +33,6 @@ const navLinks = [
   {
     id: 6,
     text: "blogs",
-    url: "/blogs/",
-  },
-  {
-    id: 7,
-    text: "contentful blogs",
     url: "/blogs/contentfulblogs/",
   },
 ];

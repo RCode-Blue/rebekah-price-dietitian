@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
+import Image from "gatsby-image";
 
 const FetchAllBlogs = () => {
   const allBlogsData = useStaticQuery(graphql`
@@ -11,6 +12,16 @@ const FetchAllBlogs = () => {
           title
           slug
           id
+          intro {
+            intro
+          }
+          picture {
+            description
+            fluid {
+              src
+              ...GatsbyContentfulFluid
+            }
+          }
           blogEntry {
             json
           }

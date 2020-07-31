@@ -8,19 +8,15 @@ import FetchAllBlogs from "./fetchContentfulAll";
 const FetchContentfulBlogsMain = (type) => {
   switch (type) {
     case "recipes":
-      // console.log("--recipes--");
       return FetchRecipes();
 
     case "blog":
-      // console.log("--blog--");
       return FetchBlogs();
 
     case "test":
-      // console.log("--test--");
       return FetchTest();
 
     default:
-      // console.log("--default--");
       return FetchAllBlogs();
   }
 };

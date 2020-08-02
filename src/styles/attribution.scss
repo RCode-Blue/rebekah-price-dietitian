@@ -19,6 +19,8 @@
   &__header {
     padding: 1rem;
     text-align: center;
+
+    display: inline-block;
   }
   &__list {
     margin: auto;
@@ -70,4 +72,31 @@
 
 .attrib-row-wrap {
   display: flex;
+}
+
+.btn-attrib {
+  color: $color-apricot-1;
+  border-color: transparent;
+  background: $color-blackbean-5;
+  margin: 5px 10px;
+
+  &__passive {
+    background: transparent;
+    border-color: transparent;
+  }
+  &__active {
+    &__blackbean {
+      border-color: transparent;
+    }
+  }
+}
+
+.show {
+  visibility: visible;
+  // visibility: inline;
+}
+
+.hide {
+  visibility: hidden;
+  // visibility: none;
 }

@@ -2,24 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 
-// import { BLOCKS } from "@contentful/rich-text-types";
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-
-// import FetchBlogs from "../../queries/blogQueries/_fetchBlogsMain";
 import FetchContentfulBlogs from "../../queries/blogQueries/_fetchContentfulBlogsMain";
 
 import "../../styles/main.scss";
 import "../../styles/contentfulBloglist.scss";
 
-const ContentfulBlogList = (props) => {
-  // console.log(props.data);
-
+const CFBlogList = (props) => {
   return (
     <div>
       {props.data.map((node) => {
-        // console.log(node);
-
-        const { blogEntry, id, intro, picture, slug, title } = node;
+        const { id, intro, picture, slug, title } = node;
 
         return (
           <div className="blog" key={id}>
@@ -42,20 +34,16 @@ const ContentfulBlogList = (props) => {
   );
 };
 
-const MainBlogList = (props) => {
-  // console.log(props);
-  // const data = FetchBlogs(props.type);
+const ContentfulBlogList = (props) => {
   const contentfulData = FetchContentfulBlogs(props.type);
 
   if (contentfulData) {
-    // console.log(contentfulData.allContentfulRpdBlog.nodes);
-
     const data = contentfulData.allContentfulRpdBlog.nodes;
 
     return (
       <div className="bloglist-wrapper">
         <h3>Blogs</h3>
-        <ContentfulBlogList data={data} />
+        <CFBlogList data={data} />
       </div>
     );
   }
@@ -67,4 +55,4 @@ const MainBlogList = (props) => {
   );
 };
 
-export default MainBlogList;
+export default ContentfulBlogList;

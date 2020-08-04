@@ -26,6 +26,12 @@ h4 {
   padding: 2rem;
 }
 
+h5 {
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
 // Section background colours
 .section-bg-mint {
   background-color: $color-mint-1;
@@ -90,6 +96,9 @@ button {
     li {
       margin-left: 2rem;
       padding-left: 1rem;
+      p {
+        padding-bottom: 0.5rem;
+      }
     }
   }
 }

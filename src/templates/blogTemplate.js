@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 import "../styles/main.scss";
 import "../styles/shared/shared.scss";
-// import "../styles/templates/blogTemplate.scss";
+import "../styles/templates/blogTemplate.scss";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;

@@ -1,46 +1,72 @@
 {
-  // GLOBAL
-  "semi": true,
-
+  // EDITOR & WORKBENCH
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "editor.foldingStrategy": "indentation",
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 200,
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.showWords": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#ffef0f",
+    "editorWarning.foreground": "#3777ff",
+    "editorBracketHighlight.foreground1": "#FFFFFF",
+    "editorBracketHighlight.foreground2": "#F5A9B8",
+    "editorBracketHighlight.foreground3": "#5BCEFA"
+  },
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  // DIFF EDITOR
+  "diffEditor.ignoreTrimWhitespace": true,
   // EMMET
-  "emmet.showSuggestionsAsSnippets": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
-  // EDITOR
-  "editor.snippetSuggestions": "top",
-  "bracket-pair-colorizer-2.colorMode": "Consecutive",
-  "bracket-pair-colorizer-2.highlightActiveScope": true,
-  "bracket-pair-colorizer-2.showVerticalScopeLine": true,
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": true,
-  "bracket-pair-colorizer-2.colors": [
-    // LIGHT THEME COLORS
-    // -----------------
-    "darkred",
-    "darkorange",
-    "orangered",
-    "darkkhaki",
-    "darkgreen",
-    "blue",
-    "purple",
-    "deeppink",
-    "darkslategray",
-    "saddlebrown"
-
-    // DARK THEME COLOURS
-    // ------------------
-    // "lightsalmon",
-    // "gold",
-    // "peachpuff",
-    // "chartreuse",
-    // "mediumslateblue",
-    // "lightblue",
-    // "thistle",
-    // "fuchsia",
-    // "pink",
-    // "honeydew",
-    // "blanchedalmond"
-  ],
-  "editor.formatOnSave": true
+  "emmet.showSuggestionsAsSnippets": true,
+  // MISC
+  "files.eol": "\n", // Linux compatible (note: windows is `\r\n`)
+  "window.zoomLevel": 1,
+  // JS
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // PRETTIER
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.requireConfig": true,
+  // LANGUAGE SPECIFIC
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

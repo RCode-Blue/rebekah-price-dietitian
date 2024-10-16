@@ -1,5 +1,6 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  // path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 module.exports = {
@@ -10,6 +11,7 @@ module.exports = {
   },
 
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-contentful`,
@@ -47,21 +49,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Martel`,
-            variants: [`600`],
-          },
-          {
-            family: `Lato`,
-            variants: [`300`, `400`, `700`],
-          },
-          {
-            family: `Quicksand`,
-            variants: [`300`, `400`, `500`],
-          },
+          `Martel\:600`,
+          `Lato \:300,400,700`,
+          `Quicksand:300,400,500`,
         ],
       },
     },
